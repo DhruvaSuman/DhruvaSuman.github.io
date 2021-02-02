@@ -1,0 +1,28 @@
+/* #home */
+
+#navbar{
+    display: flex;
+    flex-direction: column;
+}
+#navbar .log{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home{
+    height: 280px;
+    /* flex-direction: column; */
+}
+#home::before{
+    height: 400px;
+}
+/* #section */
+/* work  */
+#work{
+    flex-direction: column;
+}
+#work .box img{
+    height: 50px;
+    width: 70px;
+}
+

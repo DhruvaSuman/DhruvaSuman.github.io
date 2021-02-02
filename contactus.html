@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .contact {
+            position: relative;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("../background/back10.webp") no-repeat center center/cover;
+            /* opacity: 0.8; */
+            /* z-index: -1; */
+        }
+        .icon img {
+            height: 30px;
+            width: 30px;
+            /* z-index: 1; */
+        }
+
+         .contact .content {
+            max-width: 500px;
+            text-align: center;
+            /* z-index: 1; */
+        }
+
+        .contact .content h2 {
+            font-size: 2.9rem;
+            color: black;
+            font-weight: bold;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .contact .content p {
+            /* font-size: 1.7rem; */
+            color: rgb(6, 97, 97);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 300;
+        }
+
+        
+
+
+        .container {
+            width: 100%;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .container .contactinfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container .contactinfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+
+        .container .contactinfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #fff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .contactinfo .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            flex-direction: column;
+            font-weight: 300;
+        }
+
+        .container .contactinfo .box .text h3 {
+            font-weight: 1.9rem;
+            color: black;
+            font-weight: bold;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .contact1 {
+            width: 45%;
+            padding: 40px;
+            border:2px solid black;
+
+        }  
+        .contact1 h2{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        .contact1 .inputbox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contact1 .inputbox input,
+        .contact1 .inputbox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0px;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            resize: none;
+
+
+        }
+        .contact1 .inputbox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0px;
+            pointer-events: none;
+            transition: 0.5%;
+
+        }
+        .contact1 .inputbox input:valid ~ span,
+        .contact1 .inputbox input:focus ~ span,
+        .contact1 .inputbox textarea:valid ~ span,
+        .contact1 .inputbox textarea:focus ~ span
+        
+        {
+            color: rgb(18, 46, 201);
+            font-size: 15px;
+            transform: translateY(-20px);
+        }
+        .contact1 .inputbox input[type="submit"]
+        {
+            width: 20%;
+            background: #00bcd4;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+        @media (max-width:991px)
+        {
+            .contact{
+                padding: 50px;
+            }
+            .container{
+                flex-direction:column;
+            }
+            .container .contactinfo,
+            .contact1{
+                margin-bottom: 40px;
+                width: 100%;
+            }
+            .contact1 .inputbox input[type="submit"]{
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact us</h2>
+            <p>Write your messages here and connect to me. </p>
+        </div>
+        <div class="container">
+            <div class="contactinfo">
+
+                <div class="box">
+                    <div class="icon">
+                        <img src="../contact/map.webp" alt="map">
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>OIST,Bhopal </p>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="../contact/phone.webp" alt="phone">
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>80XXXXXX92</p>
+                    </div>
+
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <img src="../contact/mail.png" alt="mail">
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>dhruvasuman99340@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact1">
+                <form action="#">
+                    <h2>Send Your Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" id="name" required="required">
+                        <span>Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="" id="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="message" id="message" required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&family=Nerko+One&display=swap" rel="stylesheet">
+    <title>About me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nerko One', cursive;
+        }
+        .home1{
+            position: relative;
+            min-height: 100vh;
+            min-width: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+            background: url("../background/back8.webp") no-repeat center center/cover;
+        }
+       
+        .home1 .item1{
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+            height: 100vh;
+            margin: auto 10px;
+            /* border: 2px solid black; */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+    
+        .home1  .item2{
+            position: relative;
+            top: 1px;
+            /* border: 2px solid red; */
+            display: flex;
+            /* position: relative; */
+            margin: auto 10px;
+            height: 100vh;
+            /* padding: auto auto; */
+            width: 68%;
+            padding: 40px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+     
+        .home1 .item2 p{
+            color: rgb(4, 99, 161);
+            font-size: 1.8rem;
+        }
+
+       
+
+
+
+        /* .home1 .item1 .content .box1 {
+            font-size: 1.8rem;
+             text-align: center; 
+            } */
+
+        .home1 .item1 .content .box2 {
+            color: black;
+            font-size: 2.1rem;
+            font-weight: 500;
+             /* text-align: center;  */
+        }
+
+        .home1 .item1 .content .box3 {
+            font-size: 1.8rem;
+             /* text-align: center;  */
+        }
+
+        .home1 .item1 img {
+            height: 150px;
+            width: 150px;
+        }
+        .home1 .item1 .button1{
+            color: black;
+            width: 180px;
+            height: 30px;
+            border: 2px solid black;
+            margin: 15px 0px;
+            border-radius: 5px;
+            background-color: black;
+            
+             /* padding: 23px 23px;  */
+        }
+        .home1 .item1 .button1:hover{
+            background-color: gray;
+             /* color: black;  */
+            cursor: pointer;
+
+
+        }
+        .home1 .item1 .button1 a{
+            font-size: 1.3rem;
+            text-decoration: none;
+            /* /* background-color: black;*/ 
+            color: white;
+            
+        }
+        span::before {
+            color: rgb(22, 97, 133);
+            content: "Developer";
+            font-family: 'Castoro', serif;
+            animation: text1 infinite 6s;
+
+        }
+
+        @keyframes text1 {
+            0% {
+                content: "Developer";
+
+            }
+
+            20% {
+                content: "Enthusiast";
+                color: rgb(3, 47, 73);
+
+            }
+
+            40% {
+                content: "Blogger";
+
+
+            }
+
+            60% {
+                content: "Fresher";
+                color: rgb(3, 47, 73);
+            }
+            80%{
+                content: "Learner";
+            }
+
+        }
+        @media (max-width: 560px){
+            .home1{
+                /* height: 100vh; */
+                padding: 50px;
+                flex-direction: column;
+            }
+            .home1 .item1{
+                
+                flex-direction: column;
+                width: 100%;
+            }
+            .home1 .item2{
+                
+                position: relative;
+                top: 10px;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-content: center;
+            
+            }
+           
+           
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="home1">
+            <div class="item1">
+                    <img class="box0" src="../logo/pic.jpg" alt="logo">
+                    <div class="content">
+                        <div class="box2">
+                            <h1>Suman Kumar</h1>
+                        </div>
+                        <div class="box3">
+                            <h2> <span></span> </h2>
+
+                        </div>
+                    <button class="button1"><a href="/resume/resume.pdf" download="resume">Download
+                            Resume</a></button>
+                </div>
+            </div>
+            <div class="item2">
+                <p>I am enthusiast Learner and Blog writer.  </p>
+                <p>I am Microsoft Technology Associate in python.</p>
+                <p>I have done my projects on machine Learning,</p>
+                <p>Deep Learning and AWS.</p>
+            </div>
+    </section>
+
+
+</body>
+
+</html>
